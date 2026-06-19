@@ -1,0 +1,12 @@
+src/
+test/
+scripts/
+node_modules/
+coverage/
+dist/
+*.tgz
+.tsbuildinfo
+biome.json
+esbuild.config.mjs
+tsconfig.json
+vitest.config.ts
