@@ -1,0 +1,9 @@
+{
+  "id": "underscore-title",
+  "name": "Underscore Title",
+  "version": "0.1.0",
+  "minAppVersion": "1.13.0",
+  "description": "Show file and folder titles from frontmatter or delimiter-prefixed names.",
+  "author": "박현우",
+  "isDesktopOnly": false
+}

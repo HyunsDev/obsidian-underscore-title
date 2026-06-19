@@ -1,0 +1,32 @@
+{
+  "name": "obsidian-underscore-title",
+  "version": "0.1.0",
+  "description": "Show Obsidian file and folder titles from frontmatter or delimiter-prefixed names.",
+  "type": "module",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc --noEmit && node esbuild.config.mjs production",
+    "check": "pnpm run lint && pnpm run test && pnpm run build && pnpm run release:check",
+    "dev": "node esbuild.config.mjs",
+    "lint": "biome check .",
+    "release:check": "node scripts/release-check.mjs",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "obsidian",
+    "obsidian-plugin",
+    "frontmatter",
+    "title"
+  ],
+  "author": "박현우",
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.5",
+    "@types/node": "^24.10.1",
+    "esbuild": "^0.27.2",
+    "obsidian": "^1.13.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.15"
+  }
+}
